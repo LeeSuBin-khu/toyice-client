@@ -16,8 +16,8 @@ const addTitle = (props) => {
     return (
         <StyledAddTitle>
             {isDot && <Img src={dot} className={'basic-info-dot'} />}
-            <Span size={'span-medium'} color={'span-point'}>{bigTitle}&nbsp;&nbsp;</Span>
-            <Span size={'span-xsmall'} color={'span-color3'}>{smallTitle}</Span>
+            <Span size={'span-medium'} color={'span-point'} className='add-toy-bigTitle'>{bigTitle}&nbsp;&nbsp;</Span>
+            <Span size={'span-xsmall'} color={'span-color3'} className='add-toy-smallTitle'>{smallTitle}</Span>
         </StyledAddTitle>
     );
 }

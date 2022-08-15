@@ -1,100 +1,139 @@
 @font-face {
-    font-family: 'AppleSDGothicNeo';
-    font-style: normal;
-    font-weight: 100;
-    src: local('Apple SD Gothic Neo Thin'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/100_AppleSDGothicNeo-Thin.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/100_AppleSDGothicNeo-Thin.otf') format('opentype');
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('../src/assets/font/Pretendard-Black.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'AppleSDGothicNeo';
-    font-style: normal;
-    font-weight: 200;
-    src: local('Apple SD Gothic Neo UltraLight'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/200_AppleSDGothicNeo-UltraLight.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/200_AppleSDGothicNeo-UltraLight.otf') format('opentype');
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('../src/assets/font/Pretendard-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'AppleSDGothicNeo';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Apple SD Gothic Neo Light'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/300_AppleSDGothicNeo-Light.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/300_AppleSDGothicNeo-Light.otf') format('opentype');
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('../src/assets/font/Pretendard-Bold.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'AppleSDGothicNeo';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Apple SD Gothic Neo Medium'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/400_AppleSDGothicNeo-Medium.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/400_AppleSDGothicNeo-Medium.otf') format('opentype');
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('../src/assets/font/Pretendard-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'AppleSDGothicNeo';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Apple SD Gothic Neo Regular'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/500_AppleSDGothicNeo-Regular.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/500_AppleSDGothicNeo-Regular.otf') format('opentype');
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('../src/assets/font/Pretendard-Medium.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'AppleSDGothicNeo';
-    font-style: normal;
-    font-weight: 600;
-    src: local('Apple SD Gothic Neo SemiBold'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/600_AppleSDGothicNeo-SemiBold.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/600_AppleSDGothicNeo-SemiBold.otf') format('opentype');
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('../src/assets/font/Pretendard-Regular.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'AppleSDGothicNeo';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Apple SD Gothic Neo Bold'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/700_AppleSDGothicNeo-Bold.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/700_AppleSDGothicNeo-Bold.otf') format('opentype');
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('../src/assets/font/Pretendard-Light.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'AppleSDGothicNeo';
-    font-style: normal;
-    font-weight: 800;
-    src: local('Apple SD Gothic Neo ExtraBold'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/800_AppleSDGothicNeo-ExtraBold.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/800_AppleSDGothicNeo-ExtraBold.otf') format('opentype');
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('../src/assets/font/Pretendard-ExtraLight.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'AAppleSDGothicNeo';
-    font-style: normal;
-    font-weight: 900;
-    src: local('Apple SD Gothic Neo Heavy'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/900_AppleSDGothicNeo-Heavy.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/900_AppleSDGothicNeo-Heavy.otf') format('opentype');
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('../src/assets/font/Pretendard-Thin.woff2') format('woff2');
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: AppleSDGothicNeo;
+    font-family: Pretendard;
     font-style: normal;
+    font-weight: 400;
 }
 
 input::placeholder {
-    font-family: AppleSDGothicNeo;
+    font-family: Pretendard;
     font-style: normal;
+    font-weight: 400;
+}
+
+textarea {
+	font-size: 13px;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 400;
 }
 
 textarea::placeholder {
-    font-family: AppleSDGothicNeo;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 400;
+}
+
+button {
+	font-family: Pretendard;
     font-style: normal;
 }
 
 .App-contents {
-    padding: 0px 15.6% 0px 15.6%;
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+	scroll-behavior: smooth;
+}
+
+.card-title-span {
+	font-weight: 700;
+}
+
+.scroll-top {
+	display: none;
+	position: fixed;
+	top: 70%;
+	left: 90%;
+	cursor: pointer;
+}
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+    .scroll-top {
+		position: fixed;
+		top: 70%;
+		left: 96%;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 1300px) {
+    .scroll-top {
+		position: fixed;
+		top: 70%;
+		left: 50%;
+		opacity: 50%;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 1300px) {
+    .GNB {
+        display: none;
+    }
 }

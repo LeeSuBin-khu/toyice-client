@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import axios from 'axios';
 
@@ -9,10 +9,9 @@ import Button from '../../atoms/button';
 import './style.css';
 
 const Review = ({ data, id }) => {
-    const [reviewInput, setReviewInput] = useState("");
-    const [reviews, setReviews] = useState([]);
-    const [disabled, setDisabled] = useState(true);
-    const [reviewList, setReviewList] = useState([]);
+    const [reviewInput, setReviewInput] = useState(""); //input value
+    const [reviews, setReviews] = useState([]); //리뷰 리스트
+    const [disabled, setDisabled] = useState(true); //작성 버튼 활성화 여부
 
     const reviewClickHandler = async () => {
         const response = await axios.post(`${process.env.REACT_APP_SERVER_HOST}/toy/review`, {
@@ -20,13 +19,9 @@ const Review = ({ data, id }) => {
             toyId: id
         });
 
-        setReviews([...reviews, { contents: reviewInput }])
+        setReviews([...reviews, { content: reviewInput }]);
         setReviewInput("");
     }
-
-    useEffect(() => {
-        const response = axios.get(`${process.env.REACT_APP_SERVER_HOST}/toy/${id}`).then( res => setReviewList(res.data.reviewList));
-    }, [reviews])
 
     const enterClickHandler = async () => {
         if(window.event.keyCode === 13) {
@@ -35,7 +30,7 @@ const Review = ({ data, id }) => {
                 toyId: id
             });
     
-            setReviews([...reviews, { contents: reviewInput }])
+            setReviews([...reviews, { content: reviewInput }])
             setReviewInput("");
         }
     }
@@ -43,7 +38,8 @@ const Review = ({ data, id }) => {
     return (
         <div style={{marginTop: '69px'}}>
             <div className='reviewbox'>
-            { reviewList && reviewList.map( (review, i) => <ReviewBox data={review} key={i} id={i === 0 && 'review-top'} /> ) } 
+            { data && data.map( (review, i) => <ReviewBox data={review} key={i} id={i === 0 && 'review-top'} /> ) } 
+            { reviews && reviews.map( (review, i) => <ReviewBox data={review} key={i} /> ) } 
             </div>
             <div style={{ marginTop: '55px' }}>
                 <Input setDisabled={setDisabled} value={reviewInput} setValue={setReviewInput} placeholder={'텍스트를 입력해주세요.'} className={'info-review-input'} onKeyPress={enterClickHandler}>

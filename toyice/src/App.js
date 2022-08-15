@@ -13,24 +13,28 @@ export const toyId = atom({key: 'toyId', default: 0})
 function App() {
   return (
     <div className="App">
-      <Router>
       <RecoilRoot>
         <GNB />
         <div className="App-contents">
+        <Router>
           <Routes>
-            <Route exact path="/" element={<ProjectMain/>} />
+            <Route path="/" element={<ProjectMain/>} />
           </Routes>
           
           <Routes>
-            <Route exact path="/create-toy" element={<ProjectAdd/>} />
+            <Route path="/create-toy" element={<ProjectAdd/>} />
+          </Routes>
+
+          <Routes>
+            <Route path="/edit-toy/:id" element={<ProjectAdd edit={true} />} />
           </Routes>
           
           <Routes>
-            <Route exact path="/toy/:id" element={<ProjectInfo/>} />
+            <Route path="/toy/:id" element={<ProjectInfo/>} />
           </Routes>
+        </Router>
         </div>
         </RecoilRoot>
-      </Router>
     </div>
   );
 }

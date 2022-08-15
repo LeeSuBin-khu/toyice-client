@@ -5,7 +5,6 @@ import Span from "../../atoms/span";
 
 import './style.css';
 import profile_default from '../../../assets/svg/profile-default.svg';
-import { useEffect } from "react";
 
 const StyledReviewBox = styled.div`
     display: flex;

@@ -1,9 +1,9 @@
 @import '../../_settings/_var.css';
 
 .project-main-header {
-    display: inline-block;
     width: 100%;
-    padding-top: 137px;
+    height: 365px;
+    margin-top: 137px;
     margin-bottom: 35px;
 }
 

@@ -38,6 +38,8 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    font-weight: 700;
+    font-family: 'Pretendard';
 }
 
 .selectbox-placeholder {
@@ -55,14 +57,17 @@
 
 .selectbox-placeholder .orange {
     color: var(--color-point);
+    font-weight: 700;
 }
 
 .selectbox-placeholder .yellow {
     color: var(--color-yellow);
+    font-weight: 700;
 }
 
 .selectbox-placeholder .blue {
     color: var(--color-blue);
+    font-weight: 700;
 }
 
 .selectbox-active .selectbox-placeholder-hidden {

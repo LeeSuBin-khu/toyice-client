@@ -31,6 +31,7 @@
 }
 
 .card-img {
+    object-fit: cover;
     background: #B1B1B1;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
     border-radius: 25px 25px 0 0;
@@ -38,6 +39,7 @@
 
 .add-toy-stoneImg {
     position: absolute;
-    top: 43px;
+    object-fit: fill;
+    top: 80px;
     left: calc( 158px + 609px );
 }

@@ -36,6 +36,7 @@
     padding: 25px 0 25px 35px;
     box-sizing: border-box;
     color: var(--color-3);
+    height: 100%;
 }
 
 .add-toy-input:focus {
@@ -45,23 +46,14 @@
 .add-toy-active {
     background: white;
     border: 1px solid #D9D9D9;
+    color: var(--color-1);
+    font-weight: 400;
+    font-family: 'Pretendard';
 }
 
-/* .add-toy-bad { 
-    animation-duration: 0.3s;
-    animation-name: slide;
-    animation-iteration-count: 3;
+.add-toy-valid { 
+    border: 1px solid #FF5151 !important;
 }
-
-@keyframes slide {
-    from {
-        margin-left: 1%;
-    }
-
-    to {
-        margin-left: -1%;
-    }
-} */
 
 .tagging-input {
     background: transparent;
@@ -73,6 +65,14 @@
 .add-toy-input::placeholder {
     font-size: var(--size-15);
     color: var(--color-3);
+}
+
+.tagging-active {
+    padding: 0;
+}
+
+.tagging-add-toy-active {
+    color: var(--color-1);
 }
 
 

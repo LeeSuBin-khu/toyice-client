@@ -31,7 +31,6 @@ const StyledInsideCard = styled.div`
 
 const ProjectCard = () => {
     const [cards, setCards] = useState([]);
-    const [id, setId] = useRecoilState(toyId);
     const type = useRecoilValue(projectType);
     const navigation = useNavigate();
 
@@ -42,11 +41,11 @@ const ProjectCard = () => {
     return (
         <>
         {cards && cards.map( card =>
-        <StyledCard onClick={ () => { navigation(`/toy/${card.id}`, { state: { id: card.id } }); }} >
+        <StyledCard onClick={ () => { navigation(`/toy/${card.id}`, { state: { id: card.id } }); }} key={card.id} >
             <Img src={card.mainImage} width={'100%'} height={200} className='card-img' />
             <StyledInsideCard>
                 <div>
-                    <Span size='span-small' color='span-color1'>{card.title}</Span>
+                    <Span size='span-small' color='span-color1' className='card-title-span'>{card.title}</Span>
                 </div>
                 <div>
                     <Span size='span-xsmall' color='span-color3'>{card.description}</Span>

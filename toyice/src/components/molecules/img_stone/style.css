@@ -1,0 +1,33 @@
+.img-stone .orange {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.img-stone .blue {
+    position: absolute;
+    top: 68.72%;
+    left: 13.39%;
+}
+
+.img-stone .blue-eye {
+    position: absolute;
+    top: 67%;
+    left: 13.39%;
+}
+
+.img-stone .yellow {
+    position: absolute;
+    top: 49.9%;
+    left: 45.26%;
+    width: 156.82px;
+    height: 147px;
+}
+
+.img-stone .yellow-eye {
+    position: absolute;
+    top: 49.9%;
+    left: 45.26%;
+    width: 156.82px;
+    height: 147px;
+}

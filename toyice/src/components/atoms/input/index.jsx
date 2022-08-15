@@ -16,6 +16,18 @@ const Input = (props) => {
 
     const inputChangeHandler = useCallback( ({ target }) => {
         if(!onChange && setValue) {
+
+            //tag 입력창일 경우,
+            if(className.includes('tagging-input')) {
+                const space = /\s/;
+
+                if(space.exec(target.value)) {
+                    target.focus();
+                    target.value = target.value.replace(' ','');
+                    return false;
+                }
+            }
+
             setValue(target.value);
         }
     }, [value]); ///.......???

@@ -9,12 +9,8 @@ import profile_default from '../../../assets/svg/profile-default.svg';
 const StyledGNB = styled.div`
     width: 100%;
     height: 64px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #FEFEFE;
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
-    padding: 10px 340px;
     box-sizing: border-box;
     position: fixed;
     z-index: 99;
@@ -23,11 +19,23 @@ const StyledGNB = styled.div`
     word-break: keep-all;
 `;
 
+const StyledGNBContents = styled.div`
+    width: 1267px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+`;
+
 const GNB = () => {
     return (
-        <StyledGNB>
-            <Button_list className='GNB-btn-list' />
-            <Img className='GNB-profile' src={profile_default} height={38} width={38} />
+        <StyledGNB className='GNB'>
+            <StyledGNBContents>
+                <Button_list className='GNB-btn-list' />
+                <Img className='GNB-profile' src={profile_default} height={38} width={38} />
+            </StyledGNBContents>
         </StyledGNB>
     );
 }

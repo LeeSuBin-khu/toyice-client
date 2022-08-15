@@ -45,3 +45,11 @@
 .span-color4 {
     color: var(--color-4);
 }
+
+.add-toy-title {
+    font-weight: 700;
+}
+
+.add-toy-bigTitle {
+    font-weight: 700;
+}
